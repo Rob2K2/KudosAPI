@@ -61,7 +61,7 @@ namespace KudosAPI.Controllers
 
         private void UpdateKudos(string destino, string option)
         {
-            var client = new RestClient("http://localhost:58443/api/user/" + option);
+            var client = new RestClient("http://localhost:57359/api/stats/" + option);
             var request = new RestRequest(Method.PUT);
 
             string json = "{\"userID\":\"" + destino + "\"}";
